@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CargoClarity Documents Login</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #1e3a8a, #3b82f6);
+      color: #0f172a;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 24px 32px;
+      color: #e2e8f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    main {
+      flex: 1;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .login-card {
+      width: min(440px, 100%);
+      background: #f8fafc;
+      border-radius: 20px;
+      box-shadow: 0 24px 60px rgba(15, 23, 42, 0.25);
+      padding: 32px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .login-card h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #0f172a;
+    }
+
+    .login-card p {
+      margin: 0;
+      color: #475569;
+      line-height: 1.5;
+    }
+
+    .form-field {
+      display: grid;
+      gap: 8px;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    input {
+      border-radius: 12px;
+      border: 1px solid #cbd5f5;
+      padding: 12px 14px;
+      font-size: 15px;
+      background: #fff;
+      color: #0f172a;
+    }
+
+    input:focus {
+      outline: 2px solid #60a5fa;
+      border-color: #60a5fa;
+    }
+
+    .actions {
+      display: grid;
+      gap: 12px;
+    }
+
+    .primary-button {
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 15px;
+    }
+
+    .secondary-link {
+      text-align: center;
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .helper {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    .helper a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .security-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #e0f2fe;
+      color: #0f172a;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #e2e8f0;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/index.html">CargoClarity</a>
+    <a href="/about.html">About Us</a>
+  </header>
+  <main>
+    <section class="login-card" aria-label="Documents login">
+      <div>
+        <span class="security-badge">Secure Document Portal</span>
+        <h1>Log in to your documents</h1>
+        <p>Access your shipping records, compliance packets, and invoices from one secure workspace.</p>
+      </div>
+      <form>
+        <div class="form-field">
+          <label for="email">Work email</label>
+          <input id="email" name="email" type="email" placeholder="you@company.com" required />
+        </div>
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter your password" required />
+        </div>
+        <div class="helper">
+          <label>
+            <input type="checkbox" name="remember" />
+            Remember me
+          </label>
+          <a href="#reset">Forgot password?</a>
+        </div>
+        <div class="actions">
+          <button class="primary-button" type="submit">Continue to documents</button>
+          <a class="secondary-link" href="#request">Request access</a>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    Need help? Email support@cargoclarity.com or call 1-800-555-0117.
+  </footer>
+</body>
+</html>
