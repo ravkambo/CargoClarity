@@ -12,12 +12,8 @@ import {
   ChevronRight,
   Twitter,
   Linkedin,
-  Facebook,
-  LogOut,
-  LayoutDashboard
+  Facebook
 } from "lucide-react";
-import { useAuth } from "./AuthContext";
-import { Link } from "react-router-dom";
 
 const FeatureCard = ({ icon: Icon, title, description }: { icon: any, title: string, description: string }) => (
   <motion.div 
@@ -76,8 +72,6 @@ const TestimonialCard = ({ quote, author, role, image, rating }: { quote: string
 );
 
 export default function Home() {
-  const { user, logout } = useAuth();
-
   return (
     <div className="min-h-screen flex flex-col">
       {/* Navigation */}
@@ -96,26 +90,14 @@ export default function Home() {
                 {item}
               </a>
             ))}
-            {user?.role === 'admin' && (
-              <Link to="/admin" className="text-sm font-bold text-primary flex items-center gap-2">
-                <LayoutDashboard size={16} /> Admin Panel
-              </Link>
-            )}
           </nav>
 
           <div className="flex items-center gap-4">
-            <div className="hidden sm:flex items-center gap-4 mr-4 border-r border-white/10 pr-4">
-              <div className="text-right">
-                <p className="text-xs font-bold text-white">{user?.username}</p>
-                <p className="text-[10px] text-slate-500 uppercase tracking-tighter">{user?.role}</p>
-              </div>
-            </div>
             <button 
-              onClick={logout}
-              className="p-2 text-slate-400 hover:text-red-500 transition-colors"
-              title="Logout"
+              className="btn-primary px-6 h-10 text-sm opacity-50 cursor-not-allowed"
+              disabled
             >
-              <LogOut size={20} />
+              Portal
             </button>
             <button className="md:hidden text-white">
               <Menu size={24} />

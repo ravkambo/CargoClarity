@@ -27,10 +27,10 @@ export default function App() {
         element={!user ? <Login /> : <Navigate to="/" replace />} 
       />
 
-      {/* Protected Routes */}
+      {/* Public Home Route */}
       <Route 
         path="/" 
-        element={user ? <Home /> : <Navigate to="/login" replace />} 
+        element={<Home />} 
       />
       
       <Route 
