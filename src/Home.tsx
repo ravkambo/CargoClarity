@@ -81,9 +81,9 @@ export default function Home() {
             <div className="text-primary">
               <ShieldCheck size={32} />
             </div>
-            <h2 className="text-xl font-black tracking-tighter">SafeGuard</h2>
+            <h2 className="text-xl font-black tracking-tighter">Cargo Clarity</h2>
             
-            <h4 className="text-s font-black tracking-tighter">By Cargo Clarity</h4>
+            <h4 className="text-xs font-bold tracking-widest uppercase text-slate-500 ml-2 border-l border-white/10 pl-4">SafeGuard</h4>
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
@@ -95,12 +95,6 @@ export default function Home() {
           </nav>
 
           <div className="flex items-center gap-4">
-            <button 
-              className="btn-primary px-6 h-10 text-sm opacity-50 cursor-not-allowed"
-              disabled
-            >
-              Portal
-            </button>
             <button className="md:hidden text-white">
               <Menu size={24} />
             </button>
@@ -310,7 +304,7 @@ export default function Home() {
             <div className="col-span-2 md:col-span-1 space-y-6">
               <div className="flex items-center gap-2">
                 <ShieldCheck size={28} className="text-primary" />
-                <span className="font-black text-2xl tracking-tighter">SafeGuard</span>
+                <span className="font-black text-2xl tracking-tighter">Cargo Clarity</span>
               </div>
               <p className="text-slate-500 text-sm leading-relaxed">
                 Simplifying logistics compliance for the modern carrier. Secure, efficient, and audit-ready.
