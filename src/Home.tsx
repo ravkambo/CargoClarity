@@ -81,7 +81,9 @@ export default function Home() {
             <div className="text-primary">
               <ShieldCheck size={32} />
             </div>
-            <h2 className="text-xl font-black tracking-tighter">SafeGuard Logistics</h2>
+            <h2 className="text-xl font-black tracking-tighter">SafeGuard</h2>
+            
+            <h4 className="text-s font-black tracking-tighter">By Cargo Clarity</h4>
           </div>
           
           <nav className="hidden md:flex items-center gap-8">
